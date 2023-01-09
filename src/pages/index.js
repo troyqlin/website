@@ -16,7 +16,7 @@ const IndexPage = () => {
 // export const Head = () => <title>Home Page</title>
 
 export const Head = () => (
-  <Seo title="Home Page" />
+  <Seo title="Home Page" description="Troy's home page for his personal site, home to future projects and stuff yaknow"/>
 )
 
 // Step 3: Export your component
