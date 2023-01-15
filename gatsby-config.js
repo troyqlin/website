@@ -9,5 +9,5 @@ module.exports = {
     image: "/charlieBrown.jpg",
     siteUrl: "https://www.troylin.com.au",
   },
-  plugins: [],
+  plugins: ['gatsby-plugin-robots-txt'],
 }
