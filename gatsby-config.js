@@ -9,5 +9,15 @@ module.exports = {
     image: "/charlieBrown.jpg",
     siteUrl: "https://www.troylin.com.au",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.troylin.com.au',
+        sitemap: 'https://www.troylin.com.au/sitemap-index.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
+    `gatsby-plugin-sitemap`
+  ],
 }
