@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "troy lin",
+    title: "troy's website",
     description: "troy's site, home to future personal projects and information.",
     twitterUsername: "@troyqlin",
     image: "/charlieBrown.jpg",
@@ -21,5 +21,14 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp"
   ],
 }
