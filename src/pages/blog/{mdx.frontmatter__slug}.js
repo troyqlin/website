@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Layout from '../../pages/layout'
+import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
 const BlogPost = ({ data, children }) => {

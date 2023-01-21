@@ -3,8 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "troy's website",
-    description: "troy's site, home to future personal projects and information.",
+    title: "Hi, I'm Troy.",
+    pageTitle: "Home",
+    description: "Troy Lin's personal website, home to projects and more information.",
     twitterUsername: "@troyqlin",
     image: "/charlieBrown.jpg",
     siteUrl: "https://www.troylin.com.au",

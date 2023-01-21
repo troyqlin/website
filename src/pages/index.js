@@ -1,6 +1,6 @@
 // Step 1: Import React
 import * as React from 'react'
-import Layout from '../pages/layout'
+import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -22,7 +22,7 @@ const IndexPage = () => {
 // export const Head = () => <title>Home Page</title>
 
 export const Head = () => (
-  <Seo title="Home Page" description="Troy's home page for his personal site, home to future projects and stuff yaknow"/>
+  <Seo title="Troy Lin | Personal Website | Home" pageTitle="Home" description="Hi, I'm Troy Lin. I'm currently a second year Student at UNSW studying a Bachelor of Science and Computer Science. Welcome to my passion project, my website!"/>
 )
 
 // Step 3: Export your component
