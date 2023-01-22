@@ -1,20 +1,23 @@
 import * as React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-const Seo = ({ title, pageTitle }) => {
+const Seo = ({ title }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
           title
-          pageTitle
+          siteUrl
         }
       }
     }
   `)
 
   return (
-    <title>{data.site.siteMetadata.pageTitle}</title>
+    <>
+      <title>{data.site.siteMetadata.title} | {title}</title>
+      <meta name="siteUrl" content={data.site.siteMetadata.siteUrl} />
+    </>
   )
 }
 
