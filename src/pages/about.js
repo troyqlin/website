@@ -13,7 +13,10 @@ const AboutPage = () => {
 }
 
 export const Head = () => (
-  <Seo title="Student | Troy Lin - About" pageTitle="About" description="Troy's about page. Here, you'll learn how cool I am."/>
+  <>
+    <Seo title="About" />
+    <meta name="description" content="Hi, I'm Troy Lin. I'm currently a second year Student at UNSW, a university from Sydney, Australia, studying a Bachelor of Science and Computer Science. Welcome to my passion project, my website!" />
+  </>
 )
 
 // Step 3: Export your component
